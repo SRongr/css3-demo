@@ -27,3 +27,5 @@ transX(name = translateX, start, end)
    transX(demoname, 0%, -100%)
 }
 ```
+
+#### 3d 立体动画（开场翻书）需要使用景深， 这个比其他动画稍微复杂点，可以强行实现。
