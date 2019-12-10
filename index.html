@@ -5,9 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="xuebi.css">
+  <link rel="stylesheet" href="css3.common.css">
+  <link rel="stylesheet" href="fanye.css">
+  <link rel="stylesheet" href="rotate.css">
+  <link rel="stylesheet" href="up.css">
+  <link rel="stylesheet" href="loading.css">
+  <link rel="stylesheet" href="trend.css">
 </head>
 <body>
   <h4>雪碧图</h4>
-  <div class="prople"></div>
+  <div class="people-box"><img class="people" src="https://static1.keepcdn.com/2018/12/17/1545037924239_14250x600.png" alt=""></div>
+  <br>
+  <br>
+  <br>
+  <h4>旋转</h4>
+  <div class="rotate">💰</div>
+
+  <h4>上升 / 上下浮动</h4>
+  <div class="updemo">
+    <div class="bg"></div>
+    <div class="content">
+      <div>忍术~</div>
+      <br>
+      <div>忍术</div>
+    </div>
+  </div>
+  <!-- <h4>3d 翻页 （有点复杂）</h4>
+  <div class="wrapper">
+    <div class="red"></div>
+    <div class="green"></div>
+  </div> -->
+  <h4>LOADING</h4>
+  <div class="loading-box">
+    <div class="l1"><span class="rotate-l">L</span></div>
+    <div class="l2"><span class="rotate-l">L</span></div>
+    <div class="l3"><span class="rotate-l">L</span></div>
+    <div class="l4"><span class="rotate-l">L</span></div>
+    <div class="l5"><span class="rotate-l">L</span></div>
+  </div>
+  <h4>趋势图</h4>
+  <h5 class="trend">点我模拟请求</h5>
+  <div class="bottom">
+    <div class="trend-content"></div>
+  </div>
+  <br>
+  <br>
+  <br><br>
+  <script>
+    const oTrend = document.getElementsByClassName('trend')[0]
+    const oContent = document.getElementsByClassName('trend-content')[0]
+    oTrend.onclick = function () {
+      oContent.className = "trend-content end"
+    }
+  </script>
 </body>
 </html>

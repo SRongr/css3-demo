@@ -1,0 +1,57 @@
+.loading-box {
+  position: relative;
+  width: 200px;
+  height: 20px;
+  margin: 0 auto;
+}
+.l1,.l2,.l3,.l4,.l5 {
+  width: 100%;
+  position: absolute;
+}
+.l1 {
+  opacity: 1;
+  animation: loading linear 2s infinite;
+}
+.l2 {
+  opacity: .5;
+  animation: loading cubic-bezier(0.2, 0, 1, 1) 2s infinite;
+}
+.l3 {
+  opacity: .3;
+  animation: loading cubic-bezier(0.35, 0, 1, 1) 2s infinite;
+}
+.l4 {
+  opacity: .2;
+  animation: loading cubic-bezier(0.50, 0, 1, 1) 2s infinite;
+}
+.l5 {
+  opacity: .1;
+  animation: loading cubic-bezier(0.65, 0, 1, 1) 2s infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: translateX(0);
+    /* transform: rotate(0); */
+  }
+  50% {
+    transform: translateX(100%);
+    /* transform: rotate(180deg); */
+  }
+  to {
+    transform: translateX(0);
+    /* transform: rotate(360deg); */
+  }
+}
+.rotate-l {
+  display: inline-block;
+  animation: rotate-l .5s linear infinite
+}
+@keyframes rotate-l {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

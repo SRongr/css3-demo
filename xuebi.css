@@ -1,0 +1,20 @@
+.people-box {
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+}
+.people {
+  height: 200px;
+  overflow: hidden;
+  animation: people 1s steps(19, end) forwards infinite
+}
+
+@keyframes people {
+  from {
+    transform: translateX(0%)
+  }
+  to {
+    transform: translateX(-100%)
+  }
+}

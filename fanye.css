@@ -1,0 +1,16 @@
+.wrapper {
+  position: relative;
+}
+.red {
+
+  background-color: red;
+  width: 200px;
+  height: 500px;
+}
+.green {
+  position: absolute;
+  top: 0;
+  background-color: green;
+  width: 200px;
+  height: 500px;
+}

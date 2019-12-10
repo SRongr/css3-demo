@@ -1,0 +1,16 @@
+.bottom {
+  width: 300px;
+  height: 3px;
+  background-color: #dddddd;
+  position: relative;
+}
+.trend-content {
+  position: absolute;
+  transition: width 500ms ease-in;
+  background-color: orange;
+  height: 100%;
+  width: 0%;
+}
+.end {
+  width: 60%;
+}

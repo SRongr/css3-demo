@@ -1,0 +1,13 @@
+.rotate {
+  width: 22px;
+  height: 22px;
+  animation: money 1s linear forwards infinite
+}
+@keyframes money {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
