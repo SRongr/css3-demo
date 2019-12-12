@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body,html,.wrapper,.red,.green {
+      width: 100%;
+      height: 100%;
+    }
+    .wrapper {
+      position: relative;
+      transform-style : preserve-3d; 
+      perspective : 600px;
+      animation: wrapper 1s linear forwards
+    }
+    .red {
+      background-color: red;
+      opacity: 0.6;
+      position: absolute;
+      animation: red 5s 1s linear forwards;
+      transform-style: preserve-3d;
+      transform: translate3d(0, 0, 1px)
+    }
+    .green {
+      background-color: #dddddd;
+      opacity: 0.6;
+      transform:perspective(600px);
+      position: absolute;
+      transform-style: preserve-3d;
+    }
+    @keyframes wrapper {
+      to {
+        transform: scale(0.87)
+      }
+    }
+    @keyframes red {
+
+      50% {
+        transform: translate3d(-100%, 10px, 0px);
+      }
+      51% {
+        transform: translate3d(-106%, 10px, -1px);
+      }
+      to {
+        transform: translate3d(0%, 0px, -1px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="red"></div>
+    <div class="green"></div>
+  </div>
+</body>
+</html>
