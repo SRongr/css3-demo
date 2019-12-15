@@ -24,7 +24,8 @@ transX(name = translateX, start, end)
 
 /* 引用 */
 .class {
-   transX(demoname, 0%, -100%)
+	transX(demoname, 0%, -100%)
+	animation demoname 1s linear forwards infinite
 }
 ```
 
